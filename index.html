@@ -67,6 +67,9 @@
                     <button onclick="leaveRoom()" class="danger">🚪 Покинуть комнату</button>
                     <button onclick="toggleReady()" id="ready-btn" class="secondary">✅ Я готов</button>
                     <button onclick="startRoomGame()" id="start-btn" class="success hidden">▶️ Начать игру</button>
+                    <button onclick="forceStartGame()" id="force-start-btn" class="danger hidden" style="margin-top:10px;">
+                        🚀 Принудительно начать
+                    </button>
                 </div>
                 
                 <div class="control-buttons">
@@ -105,7 +108,7 @@
                             <th>Место</th>
                             <th>Игрок</th>
                             <th>Баллы</th>
-                            <th>Время</th>
+                            <th>Статус</th>
                             <th>Точность</th>
                         </tr>
                     </thead>
@@ -132,7 +135,6 @@
         <div class="wheel-title">🎡 СЕКРЕТНОЕ КОЛЕСО ФОРТУНЫ! 🎡</div>
         <div class="wheel" id="wheel">
             <div class="wheel-pointer"></div>
-            <!-- Секции колеса будут добавлены через JS -->
         </div>
         <button class="spin-btn" id="spin-btn" onclick="spinWheel()">🎯 КРУТИТЬ КОЛЕСО!</button>
     </div>
@@ -148,4 +150,4 @@
     <!-- Подключаем JavaScript -->
     <script src="script.js"></script>
 </body>
-                      </html>
+    </html>
